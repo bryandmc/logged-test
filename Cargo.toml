@@ -1,0 +1,16 @@
+[package]
+name = "logged-test"
+version = "0.1.0"
+authors = ["Bryan McCoid <bryan.mccoid@gmail.com>"]
+edition = "2018"
+
+
+[dependencies]
+proc-macro2 = "1.0"
+syn = { version = "1.0", features = ["full", "derive", "printing", "parsing", "extra-traits"] }
+quote = "1.0"
+# log = "*"
+pretty_env_logger = "*"
+
+[lib]
+proc-macro = true
